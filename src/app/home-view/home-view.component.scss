@@ -1,20 +1,17 @@
 #home-view-wrapper{
     width: 100%;
     height: 100%;
-    position: absolute;
+    // position: absolute;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     #section-start{
         width: 100%;
-        height: 100%;
-        // background: url('../../assets/img/hotel.png') no-repeat;
-        // background-size: cover;
-        // background-clip: border-box;
+        height: 700px;
         overflow: hidden;
         #section-start-background{
             width: 100%;
-            height: 100%;
+            height: 110%;
             overflow: hidden;
             display: flex;
             flex-direction: row;
@@ -23,6 +20,8 @@
             top: 0px;
             left: 0px;
             z-index: -1;
+            background: url('../../assets/img/hotel.png') no-repeat;
+            background-size: cover;
             img{
                 flex-shrink: 0;
                 max-height: 100%;
@@ -42,6 +41,7 @@
                 font-family: "Microsoft JhengHei UI", "Roboto", Arial, Helvetica, sans-serif;
                 font-size: 4em;
                 align-self: center;
+                color: #0E192C;
             }
             #search-box-container{
                 width: fit-content;
@@ -82,6 +82,49 @@
                         transform: scale(1.5);
                     }
                 }
+            }
+        }
+    }
+
+    #section-where-to-travel{
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        background: white;
+        position: relative;
+        #section-where-to-travel-background{
+            display: flex;
+            height: 100%;
+            flex-direction: row;
+            .background-block-image{
+                width: 33%;
+                height: 700px;
+                img{
+                    max-height: 90%;
+                    height: 600px;
+                }
+            }
+            .background-block-image:nth-child(2){
+                width: 40%;
+                
+            }
+            
+        }
+        #section-where-to-travel-content{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background:rgba(34, 34, 34, 0.6);
+            top: 0px;
+            display: flex;
+            justify-content: center;
+            padding-top: 2em;
+            align-items: center;
+            h1{
+                font-family: "Microsoft JhengHei UI", "Roboto", Helvetica, Arial, sans-serif;
+                color: white;
+                letter-spacing: 2px;
+                font-size: 3em;
             }
         }
     }
