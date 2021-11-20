@@ -1,0 +1,70 @@
+#home-view-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    #section-start{
+        width: 100%;
+        height: 100%;
+        // background: url('../../assets/img/hotel.png') no-repeat;
+        // background-size: cover;
+        // background-clip: border-box;
+        
+        #section-start-background{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img{
+                flex-shrink: 0;
+                max-height: 100%;
+                max-width: 100%;
+                transform: scale(1.23);
+            }
+        }
+    }
+}
+
+#main-top-navigation{
+    width: 100%;
+    height: 4em;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    // background: red;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    #main-top-navigation-right{
+        
+        // justify-self: flex-end;
+        box-sizing: border-box;
+        ul#link-list{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            padding-inline-start: 0px;
+            gap: 10px;
+            li{
+                padding: 10px 15px;
+                cursor: pointer;
+                a{
+                    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            li:hover{
+                background: rgba(36, 36, 36, 0.145);
+                
+            }
+        }
+    }
+}
