@@ -11,7 +11,7 @@
         // background: url('../../assets/img/hotel.png') no-repeat;
         // background-size: cover;
         // background-clip: border-box;
-        
+        overflow: hidden;
         #section-start-background{
             width: 100%;
             height: 100%;
@@ -19,6 +19,10 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
+            position:absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
             img{
                 flex-shrink: 0;
                 max-height: 100%;
@@ -26,8 +30,64 @@
                 transform: scale(1.23);
             }
         }
+        #section-start-content{
+            width: 100%;
+            height: 100%;
+            // padding: 10px 10px;
+            padding-left: 2em;
+            padding-top: 4em;
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-family: "Microsoft JhengHei UI", "Roboto", Arial, Helvetica, sans-serif;
+                font-size: 4em;
+                align-self: center;
+            }
+            #search-box-container{
+                width: fit-content;
+                align-self: center;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                background: white;
+                box-sizing: border-box;
+                border-radius: 10px;
+                align-items: center;
+                box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.385);
+                *{
+                    font-family: "Roboto", Arial, Helvetica, sans-serif;
+                }
+                input[type="text"]{
+                    border-top-left-radius: inherit;
+                    border-bottom-left-radius: inherit;
+                    background: white;
+                    outline: none;
+                    border: none;
+                    width: 360px;
+                    padding: 20px 20px;
+                    color: #565050;
+                }
+                #icon-container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: white;
+                    border-top-right-radius: inherit;
+                    border-bottom-right-radius: inherit;
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                    // border-left: 2px solid grey;
+                    svg{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
     }
 }
+
+
 
 #main-top-navigation{
     width: 100%;
