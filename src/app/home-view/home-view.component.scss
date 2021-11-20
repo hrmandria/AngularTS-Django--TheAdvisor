@@ -245,7 +245,7 @@ $primaryColor: #0E192C;
                     flex-direction: column;
                     width: 300px;
                     height: 80%;
-                    // background: red;
+                    position: relative;
                     cursor: pointer;
                     .caroussel-item-image{
                         height: 90%;
@@ -261,6 +261,30 @@ $primaryColor: #0E192C;
                         font-size: 1.5em;
                         color: $primaryColor;
                     }
+                }
+                .caroussel-item:hover::before{
+                    width: inherit;
+                    height: 50%;
+                    position: absolute;
+                    content: "View";
+                    background:rgba(34, 34, 34, 0.6);
+                    text-align: center;
+                    color: white;
+                    font-family: "Roboto", Helvetica, Arial, sans-serif;
+                    font-size: 2em;
+                    padding-top: 40%;
+                }
+                .carroussel-active-item::before{
+                    width: inherit;
+                    height: 50%;
+                    position: absolute;
+                    content: "View";
+                    background:rgba(34, 34, 34, 0.6);
+                    text-align: center;
+                    color: white;
+                    font-family: "Roboto", Helvetica, Arial, sans-serif;
+                    font-size: 2em;
+                    padding-top: 40%;
                 }
                 .caroussel-item:nth-child(1){
                     .caroussel-item-image{
