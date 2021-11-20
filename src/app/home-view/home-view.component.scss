@@ -283,6 +283,63 @@ $primaryColor: #0E192C;
             }
         }
     }
+
+    footer{
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        background: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+        h1{
+            color: $primaryColor;
+            font-family: "Microsoft JhengHei UI", "Roboto", Helvetica, Arial, sans-serif;
+            font-size: 3em;
+        }
+        .spaccer{
+            height: 2px;
+            width: 40%;
+            background: grey;
+        }
+        #social-media-container{
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            width: 100%;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            // background: red;
+            .social-media-item{
+                height: 100%;
+                width: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: ease all 350ms;
+                svg{
+                    color: $primaryColor;
+                    transform: scale(2.5)
+                }
+            }
+            .social-media-item:hover{
+                transform : scale(1.1);
+            }
+        }
+        #us-email{
+            display: inline-block;
+            color: $primaryColor;
+            font-family: "Roboto", Helvetica, Arial, sans-serif ;
+            font-size: 2em;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
 }
 
 
