@@ -131,6 +131,7 @@ $primaryColor: #0E192C;
         }
         
     }
+
     #section-best-restaurant{
         width: 100%;
         height: 600px;
@@ -186,6 +187,99 @@ $primaryColor: #0E192C;
                 padding: 5px 15px;
                 border-radius: 10px;
                 cursor: pointer;
+            }
+        }
+    }
+
+    #section-offers-near-you{
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        background: white;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        #section-offers-near-you-caroussel-wrapper{
+            width: 90%;
+            height: 90%;
+            background: #F1F1F1;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0px 0px 2px 0px grey;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            #section-offers-near-you-header-free{
+                width: 200px;
+                height: fit-content;
+                padding: 20px 30px;
+                position: absolute;
+                background: $primaryColor;
+                text-align: center;
+                top: -40px;
+                left: 50px;
+                color: white;
+                font-family: Helvetica, sans-serif;
+                line-height: 20px;
+                font-weight: 500;
+                border-radius: 20px;
+                box-shadow: 0px 0px 4px 0px $primaryColor;
+            }
+            #section-offers-near-you-caroussel-container{
+                width: 95%;
+                height: 500px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                // background: red;
+                margin-top: 90px;
+                gap: 20px;
+                overflow: hidden;
+                .caroussel-item{
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                    height: 80%;
+                    // background: red;
+                    cursor: pointer;
+                    .caroussel-item-image{
+                        height: 90%;
+                        box-shadow: 0px 0px 1px 0px black;
+                        img{
+                            width: 300px;
+                            max-height: 100%;
+                        }
+                    }
+                    h2.caroussel-item-title{
+                        text-align: center;
+                        font-family: "Roboto", Helvetica, Arial, sans-serif;
+                        font-size: 1.5em;
+                        color: $primaryColor;
+                    }
+                }
+                .caroussel-item:nth-child(1){
+                    .caroussel-item-image{
+                        background: url('../../assets/img/deal.png');
+                        background-size: cover;
+                    }
+                }
+                .caroussel-item:nth-child(2){
+                    .caroussel-item-image{  
+                        background: url('../../assets/img/special.png');
+                        background-size: cover;
+                    }
+                }
+                .caroussel-item:nth-child(3){
+                    .caroussel-item-image{
+                        background: url('../../assets/img/red.png');
+                        background-size: cover;
+                    }
+                }
             }
         }
     }
