@@ -1,0 +1,31 @@
+.sidenav {
+  .container {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    border-right: 1px solid rgb(151, 151, 151);
+  }
+}
+.container-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2%;
+  align-items: center;
+}
+.container-header-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2%;
+  margin-left: 20vh;
+  margin-right: 20vh;
+  align-items: center;
+}
+
+.setting-picture{
+  width: 20vh;
+  height: 20vh;
+}

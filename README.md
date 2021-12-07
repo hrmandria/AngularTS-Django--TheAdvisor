@@ -1,3 +1,20 @@
+# API
+
+<table border="1px">
+    <tr>
+        <td>Endpoint</td>
+        <td>Methode</td>
+        <td>Parametre</td>
+        <td>Reponse</td>
+    </tr>
+    <tr>
+        <td>/user</td>
+        <td>GET</td>
+        <td>null</td>
+        <td>List of all user</td>
+    </tr>
+</table>
+
 # TheAdvisor
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
