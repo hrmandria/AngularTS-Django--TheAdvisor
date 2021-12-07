@@ -1,0 +1,407 @@
+$primaryColor: #0E192C;
+
+#home-view-wrapper{
+    width: 100%;
+    height: 100%;
+    // position: absolute;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    #section-start{
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        #section-start-background{
+            width: 100%;
+            height: 110%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position:absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            background: url('../../assets/img/hotel.png') no-repeat;
+            background-size: cover;
+            img{
+                flex-shrink: 0;
+                max-height: 100%;
+                max-width: 100%;
+                transform: scale(1.23);
+            }
+        }
+        #section-start-content{
+            width: 100%;
+            height: 100%;
+            // padding: 10px 10px;
+            padding-left: 2em;
+            padding-top: 4em;
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-family: "Microsoft JhengHei UI", "Roboto", Arial, Helvetica, sans-serif;
+                font-size: 4em;
+                align-self: center;
+                color: $primaryColor
+            }
+            #search-box-container{
+                width: fit-content;
+                align-self: center;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                background: white;
+                box-sizing: border-box;
+                border-radius: 10px;
+                align-items: center;
+                box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.385);
+                *{
+                    font-family: "Roboto", Arial, Helvetica, sans-serif;
+                }
+                input[type="text"]{
+                    border-top-left-radius: inherit;
+                    border-bottom-left-radius: inherit;
+                    background: white;
+                    outline: none;
+                    border: none;
+                    width: 360px;
+                    padding: 20px 20px;
+                    color: #565050;
+                }
+                #icon-container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: white;
+                    border-top-right-radius: inherit;
+                    border-bottom-right-radius: inherit;
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                    // border-left: 2px solid grey;
+                    svg{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+
+    #section-where-to-travel{
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        background: white;
+        position: relative;
+        #section-where-to-travel-background{
+            display: flex;
+            height: 100%;
+            flex-direction: row;
+            .background-block-image{
+                width: 33%;
+                height: 700px;
+                img{
+                    max-height: 90%;
+                    height: 600px;
+                }
+            }
+            .background-block-image:nth-child(2){
+                width: 40%;
+                
+            }
+            
+        }
+        #section-where-to-travel-content{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background:rgba(34, 34, 34, 0.6);
+            top: 0px;
+            display: flex;
+            justify-content: center;
+            padding-top: 2em;
+            align-items: center;
+            h1{
+                font-family: "Microsoft JhengHei UI", "Roboto", Helvetica, Arial, sans-serif;
+                color: white;
+                letter-spacing: 2px;
+                font-size: 3em;
+            }
+        }
+        
+    }
+
+    #section-best-restaurant{
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        background: white;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        #section-best-restaurant-left{
+            width: 40%;
+            height: 100%;
+            background: $primaryColor;
+            display: flex;
+            flex-direction: column;
+            h1{
+                color: white;
+                font-family: "Microsoft JhengHei UI", "Roboto", Helvetica, Arial, sans-serif;
+                align-self: center;
+                justify-self: center;
+                font-size: 3em;
+            }
+        }
+        #section-best-restaurant-right{
+            width: 60%;
+            height: 100%;
+            background: url('../../assets/img/food.png');
+            background-size: cover;
+        }
+        #section-best-restaurant-free-box{
+            position: absolute;
+            height: 300px;
+            width: 250px;
+            background: #6B7585;
+            top: 30%;
+            left: 30%;
+            box-shadow: 0px 0px 2px 0px #6B7585;
+            padding : 20px 20px;
+            
+            p{
+                color: white;
+                font-family: "Roboto", Helvetica, Arial, sans-serif;
+                font-size: 1.5em;
+                width: 80%;
+                line-height: 40px;
+            }
+            button{
+                outline: none;
+                border: none;
+                background: $primaryColor;
+                color: white;
+                font-family: "Roboto", Helvetica;
+                font-size: 1.4em;
+                padding: 5px 15px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    #section-offers-near-you{
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        background: white;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        #section-offers-near-you-caroussel-wrapper{
+            width: 90%;
+            height: 90%;
+            background: #F1F1F1;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0px 0px 2px 0px grey;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            #section-offers-near-you-header-free{
+                width: 200px;
+                height: fit-content;
+                padding: 20px 30px;
+                position: absolute;
+                background: $primaryColor;
+                text-align: center;
+                top: -40px;
+                left: 50px;
+                color: white;
+                font-family: Helvetica, sans-serif;
+                line-height: 20px;
+                font-weight: 500;
+                border-radius: 20px;
+                box-shadow: 0px 0px 4px 0px $primaryColor;
+            }
+            #section-offers-near-you-caroussel-container{
+                width: 95%;
+                height: 500px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                // background: red;
+                margin-top: 90px;
+                gap: 20px;
+                overflow: hidden;
+                .caroussel-item{
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                    height: 80%;
+                    position: relative;
+                    cursor: pointer;
+                    .caroussel-item-image{
+                        height: 90%;
+                        box-shadow: 0px 0px 1px 0px black;
+                        img{
+                            width: 300px;
+                            max-height: 100%;
+                        }
+                    }
+                    h2.caroussel-item-title{
+                        text-align: center;
+                        font-family: "Roboto", Helvetica, Arial, sans-serif;
+                        font-size: 1.5em;
+                        color: $primaryColor;
+                    }
+                }
+                .caroussel-item:hover::before{
+                    width: inherit;
+                    height: 50%;
+                    position: absolute;
+                    content: "View";
+                    background:rgba(34, 34, 34, 0.6);
+                    text-align: center;
+                    color: white;
+                    font-family: "Roboto", Helvetica, Arial, sans-serif;
+                    font-size: 2em;
+                    padding-top: 44%;
+                }
+                .carroussel-active-item::before{
+                    width: inherit;
+                    height: 50%;
+                    position: absolute;
+                    content: "View";
+                    background:rgba(34, 34, 34, 0.6);
+                    text-align: center;
+                    color: white;
+                    font-family: "Roboto", Helvetica, Arial, sans-serif;
+                    font-size: 2em;
+                    padding-top: 44%;
+                }
+                .caroussel-item:nth-child(1){
+                    .caroussel-item-image{
+                        background: url('../../assets/img/deal.png');
+                        background-size: cover;
+                    }
+                }
+                .caroussel-item:nth-child(2){
+                    .caroussel-item-image{  
+                        background: url('../../assets/img/special.png');
+                        background-size: cover;
+                    }
+                }
+                .caroussel-item:nth-child(3){
+                    .caroussel-item-image{
+                        background: url('../../assets/img/red.png');
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        background: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+        h1{
+            color: $primaryColor;
+            font-family: "Microsoft JhengHei UI", "Roboto", Helvetica, Arial, sans-serif;
+            font-size: 3em;
+        }
+        .spaccer{
+            height: 2px;
+            width: 40%;
+            background: grey;
+        }
+        #social-media-container{
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            width: 100%;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            // background: red;
+            .social-media-item{
+                height: 100%;
+                width: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: ease all 350ms;
+                svg{
+                    color: $primaryColor;
+                    transform: scale(2.5)
+                }
+            }
+            .social-media-item:hover{
+                transform : scale(1.1);
+            }
+        }
+        #us-email{
+            display: inline-block;
+            color: $primaryColor;
+            font-family: "Roboto", Helvetica, Arial, sans-serif ;
+            font-size: 2em;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+#main-top-navigation{
+    width: 100%;
+    height: 4em;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    // background: red;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    #main-top-navigation-right{
+        box-sizing: border-box;
+        ul#link-list{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            padding-inline-start: 0px;
+            gap: 10px;
+            li{
+                padding: 10px 15px;
+                cursor: pointer;
+                a{
+                    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            li:hover{
+                background: rgba(36, 36, 36, 0.145);
+                
+            }
+        }
+    }
+}
